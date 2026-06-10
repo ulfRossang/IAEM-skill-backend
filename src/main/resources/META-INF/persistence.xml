@@ -7,24 +7,24 @@
   <persistence-unit name="epatraktorPU" transaction-type="JTA">
     <jta-data-source>jdbc/epatraktor</jta-data-source>
 
-    <class>se.handelsbanken.iaem.entity.Meddelandetyp</class>
-    <class>se.handelsbanken.iaem.entity.Meddelandestatus</class>
-    <class>se.handelsbanken.iaem.entity.Fragekategori</class>
-    <class>se.handelsbanken.iaem.entity.MeddelandeHeader</class>
-    <class>se.handelsbanken.iaem.entity.Meddelandetext</class>
-    <class>se.handelsbanken.iaem.entity.Bilaga</class>
-    <class>se.handelsbanken.iaem.entity.Bilagekoppling</class>
-    <class>se.handelsbanken.iaem.entity.KundEntity</class>
-    <class>se.handelsbanken.iaem.entity.UtskickEntity</class>
-    <class>se.handelsbanken.iaem.entity.UtskickBilagaEntity</class>
-    <class>se.handelsbanken.iaem.entity.DokumentEntity</class>
-    <class>se.handelsbanken.iaem.entity.KuvertEntity</class>
-    <class>se.handelsbanken.iaem.entity.UtskickInstallningEntity</class>
-    <class>se.handelsbanken.iaem.entity.InformationssambandEntity</class>
-    <class>se.handelsbanken.iaem.entity.PubliceringJobbEntity</class>
-    <class>se.handelsbanken.iaem.entity.InformationsproduktEntity</class>
-    <class>se.handelsbanken.iaem.entity.DebiteringsuppgiftEntity</class>
-    <class>se.handelsbanken.iaem.entity.MassutskickEntity</class>
+    <class>se.handelsbanken.iaem.meddelanden.entity.Meddelandetyp</class>
+    <class>se.handelsbanken.iaem.meddelanden.entity.Meddelandestatus</class>
+    <class>se.handelsbanken.iaem.meddelanden.entity.Fragekategori</class>
+    <class>se.handelsbanken.iaem.meddelanden.entity.MeddelandeHeader</class>
+    <class>se.handelsbanken.iaem.meddelanden.entity.Meddelandetext</class>
+    <class>se.handelsbanken.iaem.meddelanden.entity.Bilaga</class>
+    <class>se.handelsbanken.iaem.meddelanden.entity.Bilagekoppling</class>
+    <class>se.handelsbanken.iaem.kunder.entity.KundEntity</class>
+    <class>se.handelsbanken.iaem.utskick.entity.UtskickEntity</class>
+    <class>se.handelsbanken.iaem.utskick.entity.UtskickBilagaEntity</class>
+    <class>se.handelsbanken.iaem.utskick.entity.UtskickInstallningEntity</class>
+    <class>se.handelsbanken.iaem.dokument.entity.DokumentEntity</class>
+    <class>se.handelsbanken.iaem.kuvert.entity.KuvertEntity</class>
+    <class>se.handelsbanken.iaem.publicering.entity.InformationssambandEntity</class>
+    <class>se.handelsbanken.iaem.publicering.entity.PubliceringJobbEntity</class>
+    <class>se.handelsbanken.iaem.informationsprodukter.entity.InformationsproduktEntity</class>
+    <class>se.handelsbanken.iaem.debiteringsuppgifter.entity.DebiteringsuppgiftEntity</class>
+    <class>se.handelsbanken.iaem.massutskick.entity.MassutskickEntity</class>
 
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
