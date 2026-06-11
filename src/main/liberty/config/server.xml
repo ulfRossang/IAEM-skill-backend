@@ -25,8 +25,9 @@
   </library>
 
   <!-- third-party visibility lets the app extend EclipseLink classes (e.g. H2V2Platform extends H2Platform) -->
+  <!-- commonLibraryRef exposes H2 classes to the app so WebServlet (h2-console) can load -->
   <webApplication location="iaem-backend.war" contextRoot="/iaem">
-    <classloader apiTypeVisibility="spec, ibm-api, api, stable, beta, third-party"/>
+    <classloader commonLibraryRef="h2Lib" apiTypeVisibility="spec, ibm-api, api, stable, beta, third-party"/>
   </webApplication>
 
   <logging consoleLogLevel="INFO"/>
